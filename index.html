@@ -265,7 +265,7 @@
         <div class="content has-text-justified"> 
             <figure>
                 <img src="static/images/agentpoirot.png" alt="Teaser Image">
-                <figcaption> <b>Figure 2:</b> AgentPoirot uses a 'Question Generation (QG) Prompt' that takes as input the dataset schema and the goal to generate k high-level questions. Then, it utilizes the 'Code Generation (CG) Prompt' to generate plots answering the high-level questions. Using the 'Insight Extraction (IE) Prompt' and the outputs from the previous step, it generates an insight and justifies that insight. Finally, AgentPoirot employs the 'Follow-Up Question (FQ) Prompt' to generate diverse follow-up questions and selects the top one using the 'Question Selection (QS) Prompt'. This question is injected back into the CG prompt to start the cycle again.</figcaption>
+                <figcaption> <b>Figure 2:</b> Steps followed by AgentPoirot to discover insight given a dataset.</figcaption>
               </figure>
             </div>
           </div> 
@@ -275,21 +275,7 @@
           <div class="columns is-centered has-text-centered">
             <div class="column is-three-quarters">
               <div class="content has-text-justified">
-                <p>
-                  We propose AgentPoirot, which, given a dataset (D) in InsightBench and a goal (G), performs systematic data exploration aimed at achieving G. The working of AgentPoirot is as follows:
-                </p>
-                <ol type="1">
-                  <li><b>Extract Dataset Schema (S):</b> AgentPoirot extracts information about every column in the dataset, including name, type, total unique values, total NA values, and additional statistics such as minimum, maximum, mean, and standard deviation for numerical data, and minimum and maximum dates for date data. For other data types, it extracts the top 5 unique values from each column.</li>
-                  <li><b>Generate Insights:</b> Given the triplet (D, G, S), AgentPoirot uses the Question Generation Prompt to generate k (equal to 3) high-level questions. It answers each high-level question by generating Python code and interpreting the output. Then, it generates n (equal to 4) follow-up questions for each high-level question and answers them as well, resulting in a total of (n+1)×k insights. (see Figure 2 to see a complete overview of AgentPoirot)</li>
-                  <li><b>Generate Summary:</b> AgentPoirot summarizes the insights obtained from the previous step using Prompt 7.</li>
-                </ol>  
-                <p>
-                  Additionally:
-                </p>
-                <ul>
-                  <li><b>generic goal:</b> We use the generic goal, 'I want to find interesting insights in this dataset,' instead of a carefully designed goal and run AgentPoirot on InsightBench.</li>
-                  <li><b>non-diverse follow-ups:</b> We use Prompt 4 instead of Prompt 3 to generate only one type of follow-up question and run AgentPoirot on InsightBench.</li>
-                </ul>
+                <p>Our proposed baseline agent, AgentPoirot, follows a structured process for data analysis. It begins by utilizing a 'Question Generation (QG) Prompt' that takes as input the dataset schema and an overarching goal to generate k high-level questions. Then, it utilizes a 'Code Generation (CG) Prompt' to generate a plots answering the high-level questions. Once the plots are generated, AgentPoirot utilizes the "Insight Extraction (IE) Prompt" to derive insights from the generated plots along with a justification for generating the respective insights. Finally, it utilizes the "Follow-Up Question (FQ) Prompt" to generate additional questions, and then selects the most relevant one using the "Question Selection (QS) Prompt." This selected question is fed back into the CG prompt to initiate the cycle of insight generation again.</p>
               </div>
             </div>
           </div>
