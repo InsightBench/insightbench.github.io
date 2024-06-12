@@ -116,8 +116,71 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">InsightBench: <span class="is-size-2"><span class="is-size-1">E</span>valuating <span class="is-size-1">B</span>usiness <span class="is-size-1">A</span>nalytics <span class="is-size-1">A</span>gents <span class="is-size-1">T</span>hrough <span class="is-size-1">M</span>ulti-<span class="is-size-1">S</span>tep <span class="is-size-1">I</span>nsight <span class="is-size-1">G</span>eneration</span></h1>
             <div class="is-size-5 publication-authors">
-                <span class="author-block">
-                    <a href="" style="color:#f68946;font-weight:normal;"><sup>ServiceNow Research Team</sup></a>
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">
+                        <a href="#" style="color:#f68946;font-weight:normal;">Gaurav Sahu<sup> 1,6 </sup></a> ,
+                    </span>
+                    <span class="author-block">
+                        <a href="#" style="color:#F2A900;font-weight:normal;">Abhay Puri<sup> 1 </sup></a> ,
+                    </span>
+                    <span class="author-block">
+                        <a href="#" style="color:#f68946;font-weight:normal;">Juan Rodriguez<sup> 1,2,4 </sup></a> ,
+                    </span>
+                    <span class="author-block">
+                        <a href="#" style="color:#f68946;font-weight:normal;">Alexandre Drouin<sup> 1 </sup></a> ,
+                    </span>
+                    <span class="author-block">
+                        <a href="#" style="color:#008AD7;font-weight:normal;">Perouz Taslakian<sup> 1 </sup></a> ,
+                    </span>
+                    <span class="author-block">
+                        <a href="#" style="color:#F2A900;font-weight:normal;">Valentina Zantedeschi<sup> 1 </sup></a> ,
+                    </span>
+                    <span class="author-block">
+                        <a href="#" style="color:#f68946;font-weight:normal;">Alexandre Lacoste<sup> 1 </sup></a> , 
+                    </span>
+                    <span class="author-block">
+                        <a href="#" style="color:#008AD7;font-weight:normal;">David Vazquez<sup> 1 </sup></a>,
+                    </span>
+                    <span class="author-block">
+                        <a href="#" style="color:#F2A900;font-weight:normal;">Nicolas Chapados<sup> 1 </sup></a> ,
+                    </span>
+                    <span class="author-block">
+                        <a href="#" style="color:#f68946;font-weight:normal;">Christopher Pal<sup> 1,2,3 </sup></a> ,
+                    </span>
+                    <span class="author-block">
+                        <a href="#" style="color:#008AD7;font-weight:normal;">Sai Rajeswar Mudumba<sup> 1 </sup></a> ,
+                    </span>
+                    <span class="author-block">
+                        <a href="#" style="color:#F2A900;font-weight:normal;">Issam Hadj Laradji<sup> 1,5 </sup></a> 
+                    </span>                    
+                </div>
+                <div class="is-size-5 publication-authors">
+                    <span class="author-block"><b style="color:#f68946; font-weight:normal">&#x25B6 </b>ServiceNow Research <sup> 1 </sup></span>
+                    <span class="author-block"><b style="color:#0a5178; font-weight:normal">&#x25B6 </b>Mila - Quebec AI Institute <sup> 2 </sup></span>
+                    <span class="author-block"><b style="color:#F2A900; font-weight:normal">&#x25B6 </b>Canada CIFAR AI Chair <sup> 3 </sup></span>
+                    <span class="author-block"><b style="color:#35625d; font-weight:normal">&#x25B6 </b>ETS, Montreal, Canada <sup> 4 </sup></span>
+                    <span class="author-block"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b>UBC, Vancouver, Canada <sup> 5 </sup></span>
+                    <span class="author-block"><b style="color:#55181c; font-weight:normal">&#x25B6 </b>University of Waterloo <sup> 6 </sup></span>
+                </div>
+                <div class="column has-text-centered">
+                    <div class="publication-links">
+                <span class="link-block">
+                    <a href="https://github.com/ServiceNow/insight-bench" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a href="https://huggingface.co/datasets/ServiceNow/insight_bench" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-database"></i>
+                      </span>
+                      <span>Dataset</span>
+                    </a>
                   </span>
             </div>
             <!-- <div class="is-size-5 publication-authors">
@@ -151,15 +214,101 @@
       </div>
     </div>
   </section>
-  <section class="hero teaser">
+  <section class="section" style="background-color:#efeff081">
     <div class="container is-max-desktop">
-      <div class="hero-body">
-        <h4 class="subtitle has-text-centered">
-            &#x1F51C;<span style="color: #ff3860">[Coming Soon!]</span> 
-        </h4>
+      <h2 class="title is-3" style="text-align: center;">Abstract</h2>
+      <!-- Image -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-six-fifths">
+          <figure>
+            <img src="static/images/cba_teaser.png" alt="Teaser Image">
+            <figcaption> <b>Figure 1:</b> Existing benchmarks (top) assess the agents’ ability to solve single data analytics tasks with defined
+                outputs. InsightBench (bottom) specializes in evaluating the effectiveness of LLM-based agents for comprehensive
+                data analytics processes. This includes evaluating the agents’ ability to recommend the best specific tasks to
+                address a specific goal, extracting insights across descriptive, diagnostic, predictive, and prescriptive categories,
+                and summarizing both findings and recommended next steps (as demonstrated by AgentPoirot).</figcaption>
+          </figure>
+        </div>
+      </div>
+      <!-- Abstract -->
+      <div class="columns is-centered has-text-centered">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-six-fifths">
+              <div class="content has-text-justified">
+                <p>
+                  Data analytics is essential for extracting valuable insights from data that can assist organizations in making effective decisions. We introduce InsightBench, a benchmark dataset with three key features.
+                </p>
+                <ol type="1">
+                  <li><b>InsightBench Introduction</b>. <span style="font-size: 95%;">InsightBench consists of 31 datasets representing diverse business use cases such as finance and incident management, each accompanied by a carefully curated set of insights planted in the datasets.</span></li>
+                  <li><b>End-to-End Analytics Evaluation</b>. <span style="font-size: 95%;">Unlike existing benchmarks focusing on answering single queries, InsightBench evaluates agents based on their ability to perform end-to-end data analytics, including formulating questions, interpreting answers, and generating a summary of insights and actionable steps.</span></li>
+                  <li><b>Quality Assurance</b>. <span style="font-size: 95%;">We conducted comprehensive quality assurance to ensure that each dataset in the benchmark had clear goals and included relevant and meaningful questions and analysis.</span></li>
+                  <li><b>Two-Way Evaluation Mechanism</b>. <span style="font-size: 95%;">We implement a two-way evaluation mechanism using LLaMA-3-Eval as an effective, open-source evaluator method to assess agents’ ability to extract insights.</span></li>
+                  <li><b>Baseline Agent: AgentPoirot</b>. <span style="font-size: 95%;">We propose AgentPoirot, our baseline data analysis agent capable of performing end-to-end data analytics. Our evaluation on InsightBench shows that AgentPoirot outperforms existing approaches that focus on resolving single queries.</span></li>
+                  <li><b>Comparison and Access</b>. <span style="font-size: 95%;">We compare the performance of open and closed-source LLMs and various evaluation strategies. Overall, this benchmark serves as a testbed to motivate further development in comprehensive data analytics and can be accessed <a href="https://github.com/ServiceNow/insight-bench">here</a>.</span></li>
+                </ol>  
+              </div>
+            </div>
+          </div>
+  </section>
+
+  <section class="section">
+    <!-- Results. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths">
+        <h2 class="title is-3">AgentPoirot</h2>
       </div>
     </div>
-  </section>
+    <!-- </div> -->
+  <div class="container is-max-desktop">
+  
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-justified"> 
+            <figure>
+                <img src="static/images/agentpoirot.png" alt="Teaser Image">
+                <figcaption> <b>Figure 2:</b> AgentPoirot uses a 'Question Generation (QG) Prompt' that takes as input the dataset schema and the goal to generate k high-level questions. Then, it utilizes the 'Code Generation (CG) Prompt' to generate plots answering the high-level questions. Using the 'Insight Extraction (IE) Prompt' and the outputs from the previous step, it generates an insight and justifies that insight. Finally, AgentPoirot employs the 'Follow-Up Question (FQ) Prompt' to generate diverse follow-up questions and selects the top one using the 'Question Selection (QS) Prompt'. This question is injected back into the CG prompt to start the cycle again.</figcaption>
+              </figure>
+            </div>
+          </div> 
+    </section>
+    <section class="section">
+        <div class="container">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-three-quarters">
+              <div class="content has-text-justified">
+                <p>
+                  We propose AgentPoirot, which, given a dataset (D) in InsightBench and a goal (G), performs systematic data exploration aimed at achieving G. The working of AgentPoirot is as follows:
+                </p>
+                <ol type="1">
+                  <li><b>Extract Dataset Schema (S):</b> AgentPoirot extracts information about every column in the dataset, including name, type, total unique values, total NA values, and additional statistics such as minimum, maximum, mean, and standard deviation for numerical data, and minimum and maximum dates for date data. For other data types, it extracts the top 5 unique values from each column.</li>
+                  <li><b>Generate Insights:</b> Given the triplet (D, G, S), AgentPoirot uses the Question Generation Prompt to generate k (equal to 3) high-level questions. It answers each high-level question by generating Python code and interpreting the output. Then, it generates n (equal to 4) follow-up questions for each high-level question and answers them as well, resulting in a total of (n+1)×k insights. (see Figure 2 to see a complete overview of AgentPoirot)</li>
+                  <li><b>Generate Summary:</b> AgentPoirot summarizes the insights obtained from the previous step using Prompt 7.</li>
+                </ol>  
+                <p>
+                  Additionally:
+                </p>
+                <ul>
+                  <li><b>AgentPoirot (Ours) with a generic goal:</b> We use the generic goal, 'I want to find interesting insights in this dataset,' instead of a carefully designed goal and run AgentPoirot on InsightBench.</li>
+                  <li><b>AgentPoirot (Ours) with non-diverse follow-ups:</b> We use Prompt 4 instead of Prompt 3 to generate only one type of follow-up question and run AgentPoirot on InsightBench.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+  
+<section class="hero teaser">
+<div class="container is-max-desktop">
+    <div class="hero-body">
+    <h4 class="subtitle has-text-centered">
+        &#x1F51C;<span style="color: #ff3860">[Coming Soon!]</span> More results, experiments, and other updates will be coming soon!
+    </h4>
+    </div>
+</div>
+</section>
+      
 
 </body>
 
